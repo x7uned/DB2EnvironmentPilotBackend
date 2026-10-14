@@ -1,0 +1,1 @@
+export function validateTask(body){if(typeof body.title!=='string'||body.title.trim().length<3||body.title.length>160)throw new Error('Title must contain 3–160 characters.');return {title:body.title.trim(),completed:false};}
